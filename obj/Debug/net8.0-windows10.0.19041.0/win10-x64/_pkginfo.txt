@@ -1,0 +1,1 @@
+C:\1-Proyectos\C#\.NET MAUI\AppEstudio1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppPackages\AppEstudio1_1.0.0.0_Debug_Test\AppEstudio1_1.0.0.0_x64_Debug.msix

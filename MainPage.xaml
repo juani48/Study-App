@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEstudio1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Margin="17" HorizontalOptions="Center">
+            
+            <Label
+                Text="Bienvenido a Control de Estudio!"
+                Style="{StaticResource Headline}" />
+
+            <Label FontAttributes="Italic" HorizontalOptions="Center" Text="Gestiona tu forma de estudio utilizando las tecnicas de concentracion mas famosas."/>
+            
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Tecnica Pomodoro&#10;&#10;" FontSize="Subtitle"/>
+
+                        <Span Text="La técnica "/>
+                        <Span Text="Pomodoro" FontAttributes="Bold"/>
+                        <Span Text=" es un método de gestión de tiempo que sugiere trabajar en intervalos de 25 minutos, sin interrupción ni distracciones, y añadir tiempos de descanso de 5 minutos. Su objetivo es establecer metas y mejorar la productividad.&#10;Los intervalos de tiempo se denominan «pomodoros» y una vez cumplidos cuatro de ellos puedes hacer pausas prolongadas de entre 15 a 30 minutos, siempre y cuando se hayan completado los primeros cuatro intervalos de trabajo consecutivos.&#10;&#10;"/>
+
+                        <Span Text="Cuando aplicar la tecnica Pomodoro?" FontSize="Subtitle"/>
+
+                        <Span Text="&#10;&#10;-"/>
+                        <Span TextDecorations="Underline" Text="Tareas que requieren concentración profunda:"/>
+                        <Span Text=" Si estás trabajando en proyectos que demandan un alto nivel de concentración y enfoque, como la escritura, la programación o el diseño, la técnica Pomodoro puede ser especialmente efectiva.&#10;Dividir estas tareas en intervalos de tiempo definidos te ayuda a evitar la fatiga mental y a mantener una alta calidad de trabajo a lo largo del día.&#10;-"/>
+
+                        <Span Text="Tareas repetitivas o monótonas:" TextDecorations="Underline"/>
+                        <Span Text=" Incluso para tareas que pueden parecer simples o monótonas, como responder correos electrónicos o realizar llamadas telefónicas, la técnica Pomodoro puede ser útil para mantener la concentración y evitar distracciones.&#10;-"/>
+
+                        <Span Text="Para combatir la procrastinación:" TextDecorations="Underline" />
+                        <Span Text=" Si tienes dificultades para empezar una tarea o tiendes a procrastinar, la técnica Pomodoro puede ser un excelente método para vencer la resistencia inicial.&#10;Al dividir la tarea en intervalos de tiempo manejables y establecer descansos regulares, te resultará más fácil dar el primer paso y mantenerte enfocado.&#10;-"/>
+
+                        <Span Text="En espacios donde debes evitar distracciones frecuentes:" TextDecorations="Underline" />
+                        <Span Text=" Si trabajas en un entorno con muchas distracciones, como una oficina abierta o un espacio de trabajo compartido, la técnica Pomodoro puede ayudarte a bloquear esas distracciones y mantener la concentración en tus tareas prioritarias.&#10;-" />
+
+                        <Span Text="Para mejorar la gestión del tiempo:" TextDecorations="Underline"/>
+                        <Span Text=" Incluso si ya eres bastante organizado, la técnica Pomodoro puede proporcionarte una estructura adicional para tu día de trabajo, ayudándote a priorizar tareas, gestionar el tiempo de manera más efectiva y mantener un equilibrio entre trabajo y descanso.&#10;&#10;" />
+
+                        <Span Text="Tecnica FlowTime&#10;&#10;" FontSize="Subtitle"/>
+
+                        <Span Text="La técnica "/>
+                        <Span Text="FlowTime" FontAttributes="Bold"/>
+                        <Span Text=" es un método que te proporciona un seguimiento del tiempo, descansos regulares y te permite concentrarte en una única tarea. Todo esto sin el estrés e interrupción que acompaña a Pomodoro. En lugar de alternar estrictamente entre, por ejemplo, 25 minutos de trabajo y 5 minutos de descanso, la técnica Flowtime te permite trabajar durante el tiempo que tu cerebro necesite.&#10;Además, gracias a este método podrás descubrir en qué momento del día eres más productivo y repartirte el trabajo de forma más coherente para maximizar tu eficiencia.&#10;&#10;"/>
+
+                        <Span Text="Como gestionar la tecnica FlowTime?&#10;&#10;" FontSize="Subtitle"/>
+
+                        <Span Text="En lugar de alternar estrictamente entre, por ejemplo, 25 minutos de trabajo y 5 minutos de descanso, la técnica Flowtime te permite trabajar durante el tiempo que tu cerebro necesite.&#10;Además, gracias a este método podrás descubrir en qué momento del día eres más productivo y repartirte el trabajo de forma más coherente para maximizar tu eficiencia. Por ejemplo, puede suceder que por la mañana seas capaz de realizar 90 minutos de trabajo antes de tu primer descanso y por la tarde necesites alternar entre 45 minutos de trabajo y 5 de descanso.&#10;La duración de la pausa depende de ti. No obstante, puedes probar con estos intervalos y experimentar con ellos hasta dar con tu tiempo personal:&#10;&#10;"/>
+
+                        <Span Text="-Trabaja durante 25 minutos o menos y haz una pausa de 5 minutos.&#10;-Cada 25-50 minutos de trabajo, intenta descansar durante 8 minutos.&#10;-Para 50-90 minutos de trabajo, realiza una pausa de 10 minutos.&#10;-Si estás más de 90 minutos trabajando, relájate durante 15 minutos." />
+
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <HorizontalStackLayout VerticalOptions="End" Spacing="10">
+                <Label Text="Bibliogafia de la tecnica Pomodoro" FontAttributes="Italic" TextColor="Blue" TextDecorations="Underline" FontSize="11">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding TapCommand}"
+                                          CommandParameter="https://blog.hubspot.es/sales/tecnica-pomodoro" />
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text="Bibliogafia de la tecnica FlowTime" FontAttributes="Italic" TextColor="Blue" TextDecorations="Underline" FontSize="11">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding TapCommand}"
+                              CommandParameter="https://www.iep-edu.com.co/metodo-flowtime-alternativa-a-pomodoro/" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,1 @@
+C:\1-Proyectos\C#\.NET MAUI\AppEstudio1\AppEstudio1.csproj;x64
